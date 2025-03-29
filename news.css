@@ -1,127 +1,28 @@
-@import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600&display=swap");
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: poppins, sans-serif;
-}
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-height: 3.5rem;
 
-body {
-  background: #f4f4f4;
-}
-.container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 20px;
-}
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --black-color: hsl(220, 24%, 12%);
+  --black-color-light: hsl(220, 24%, 15%);
+  --black-color-lighten: hsl(220, 20%, 18%);
+  --white-color: #fff;
+  --body-color: hsl(220, 100%, 97%);
 
-header {
-  background: #222;
-  color: white;
-  padding: 15px 0;
-}
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Montserrat", sans-serif;
+  --normal-font-size: 0.938rem;
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  /*========== Font weight ==========*/
+  --font-regular: 400;
+  --font-semi-bold: 600;
 
-.logo {
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-}
-
-.nav-links li {
-  margin: 0 15px;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: white;
-  font-size: 16px;
-  transition: 0.3s;
-}
-
-.nav-links a:hover {
-  color: #f4a261;
-}
-
-.nav-right {
-  display: flex;
-  align-items: center;
-}
-
-.nav-right input {
-  padding: 5px;
-  border: none;
-  border-radius: 5px;
-}
-
-.dark-mode {
-  background: transparent;
-  border: none;
-  color: white;
-  font-size: 20px;
-  margin-left: 10px;
-  cursor: pointer;
-}
-
-/* Dark Mode Styles */
-.dark-mode-active {
-  background: #121212;
-  color: white;
-}
-
-.dark-mode-active header {
-  background: #333;
-}
-
-/* Menu Button (Right Top) */
-.menu-toggle {
-  background: none;
-  border: none;
-  color: white;
-  font-size: 24px;
-  cursor: pointer;
-  display: none;
-}
-
-/* Dark Mode Styles */
-.dark-mode-active {
-  background: #121212;
-  color: white;
-}
-
-.dark-mode-active header {
-  background: #333;
-}
-
-/* Mobile Menu */
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-  }
-
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    background: #222;
-    width: 100%;
-    text-align: center;
-    padding: 10px 0;
-  }
-
-  .nav-links.show {
-    display: flex;
-  }
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
 }
