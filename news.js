@@ -13,3 +13,16 @@ const showMenu = (toggleId, navId) => {
 };
 
 showMenu("nav-toggle", "nav-menu");
+
+/*=============== ACTIVE NAV LINK ===============*/
+const navLinks = document.querySelectorAll(".nav-link");
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    // Remove active class from all links
+    navLinks.forEach((l) => l.classList.remove("active-link"));
+
+    // Add active class to clicked link
+    link.classList.add("active-link");
+  });
+});

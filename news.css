@@ -72,6 +72,10 @@ a {
   color: var(--white-color);
 }
 
+.active-link {
+  color: green !important;
+}
+
 .nav-data {
   height: 100%;
   display: flex;
@@ -316,5 +320,389 @@ a {
     top: 0;
     pointer-events: initial;
     transition: top 0.3s;
+  }
+}
+
+.main-content {
+  margin-top: calc(var(--header-height) + 1rem);
+}
+
+section {
+  padding-top: 2rem;
+}
+
+/* Home section css  */
+/* Home section css  */
+.home-head {
+  font-size: 2.5rem; /* Set a readable font size */
+  font-weight: var(--font-semi-bold); /* Use a semi-bold font weight */
+  color: var(--black-color); /* Make sure the text color is visible */
+  text-align: center; /* Center align the heading */
+  margin-bottom: 2rem;
+  margin-top: 20px;
+}
+
+/* Contact Section Styling */
+#contact {
+  background-color: var(--black-color); /* Same color as header */
+  color: var(--white-color); /* White text color */
+  padding: 4rem 1.5rem;
+  border-top: 1px solid var(--black-color-light);
+}
+
+#contact h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: var(--font-semi-bold);
+}
+
+#contact p {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--white-color); /* White text for paragraph */
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form label {
+  font-size: 1rem;
+  font-weight: var(--font-regular);
+  color: var(--white-color); /* White text color for labels */
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid var(--black-color-light);
+  border-radius: 4px;
+  background-color: var(--black-color-light); /* Darker background for inputs */
+  color: var(--white-color); /* White text in the input fields */
+}
+
+.contact-form textarea {
+  resize: none;
+  height: 150px;
+}
+
+.contact-form .btn-submit {
+  background-color: green; /* Same green as in header active link */
+  color: var(--white-color);
+  padding: 1rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form .btn-submit:hover {
+  background-color: darkgreen; /* Darker green on hover */
+}
+
+.social-media {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.social-media h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.social-media ul {
+  list-style: none;
+  padding: 0;
+}
+
+.social-media ul li {
+  display: inline-block;
+  margin: 0.5rem;
+}
+
+.social-media ul li a {
+  color: var(--white-color);
+  text-decoration: none;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.social-media ul li a:hover {
+  color: green; /* Hover color */
+}
+
+.social-media ul li a i {
+  font-size: 1.5rem;
+}
+
+/* Copyright Section Styling */
+.copyright {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: var(--white-color); /* White text color */
+}
+
+.copyright p {
+  margin: 0;
+}
+
+/* test  */
+/* Glow for the planet ring */
+.planet-ring {
+  stroke: none;
+  animation: glowRing 10s infinite linear;
+}
+
+@keyframes glowRing {
+  0% {
+    fill: #ff3cac;
+    filter: drop-shadow(0 0 30px #ff3cac); /* Pink glow */
+  }
+  10% {
+    fill: #ff7f00;
+    filter: drop-shadow(0 0 30px #ff7f00); /* Orange glow */
+  }
+  20% {
+    fill: #ffff00;
+    filter: drop-shadow(0 0 30px #ffff00); /* Yellow glow */
+  }
+  30% {
+    fill: #32cd32;
+    filter: drop-shadow(0 0 30px #32cd32); /* Lime green glow */
+  }
+  40% {
+    fill: #00c9ff;
+    filter: drop-shadow(0 0 30px #00c9ff); /* Cyan glow */
+  }
+  50% {
+    fill: #2b86c5;
+    filter: drop-shadow(0 0 30px #2b86c5); /* Blue glow */
+  }
+  60% {
+    fill: #784ba0;
+    filter: drop-shadow(0 0 30px #784ba0); /* Purple glow */
+  }
+  70% {
+    fill: #ff1493;
+    filter: drop-shadow(0 0 30px #ff1493); /* Deep pink glow */
+  }
+  80% {
+    fill: #ff6347;
+    filter: drop-shadow(0 0 30px #ff6347); /* Tomato red glow */
+  }
+  90% {
+    fill: #f0e68c;
+    filter: drop-shadow(0 0 30px #f0e68c); /* Khaki glow */
+  }
+  100% {
+    fill: #ff3cac;
+    filter: drop-shadow(0 0 30px #ff3cac); /* Back to pink glow */
+  }
+}
+
+/* Glow for the yellow planet (matching the ring animation) */
+.yellow-planet {
+  fill: #ff3cac; /* Start with the first color (same as ring) */
+  filter: drop-shadow(0 0 30px #ff3cac); /* Initial glow color */
+  animation: yellowPlanetGlow 10s infinite linear; /* Same animation for yellow planet */
+}
+
+@keyframes yellowPlanetGlow {
+  0% {
+    fill: #ff3cac;
+    filter: drop-shadow(0 0 30px #ff3cac); /* Pink glow */
+  }
+  10% {
+    fill: #ff7f00;
+    filter: drop-shadow(0 0 30px #ff7f00); /* Orange glow */
+  }
+  20% {
+    fill: #ffff00;
+    filter: drop-shadow(0 0 30px #ffff00); /* Yellow glow */
+  }
+  30% {
+    fill: #32cd32;
+    filter: drop-shadow(0 0 30px #32cd32); /* Lime green glow */
+  }
+  40% {
+    fill: #00c9ff;
+    filter: drop-shadow(0 0 30px #00c9ff); /* Cyan glow */
+  }
+  50% {
+    fill: #2b86c5;
+    filter: drop-shadow(0 0 30px #2b86c5); /* Blue glow */
+  }
+  60% {
+    fill: #784ba0;
+    filter: drop-shadow(0 0 30px #784ba0); /* Purple glow */
+  }
+  70% {
+    fill: #ff1493;
+    filter: drop-shadow(0 0 30px #ff1493); /* Deep pink glow */
+  }
+  80% {
+    fill: #ff6347;
+    filter: drop-shadow(0 0 30px #ff6347); /* Tomato red glow */
+  }
+  90% {
+    fill: #f0e68c;
+    filter: drop-shadow(0 0 30px #f0e68c); /* Khaki glow */
+  }
+  100% {
+    fill: #ff3cac;
+    filter: drop-shadow(0 0 30px #ff3cac); /* Back to pink glow */
+  }
+}
+
+/* Glow for the planet ring End*/
+
+/* Home Section Styling */
+#home {
+  padding: 4rem 1.5rem;
+  background-color: var(--body-color);
+  color: var(--black-color);
+}
+
+.home-container {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.home-head {
+  font-size: 3rem;
+  font-weight: var(--font-semi-bold);
+  color: var(--black-color);
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.categories {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.category {
+  flex: 1 1 45%;
+}
+
+.category-title {
+  font-size: 1.5rem;
+  font-weight: var(--font-semi-bold);
+  color: var(--black-color);
+  margin-bottom: 1rem;
+}
+
+.category-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.category-item {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.category-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.news-summary {
+  font-size: 1rem;
+  color: var(--black-color-light);
+}
+
+.featured-articles {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.featured-item {
+  display: flex;
+  gap: 1rem;
+  background-color: var(--white-color);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.featured-item img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.article-title {
+  font-size: 1.5rem;
+  font-weight: var(--font-semi-bold);
+  margin-bottom: 1rem;
+}
+
+.article-summary {
+  font-size: 1rem;
+  color: var(--black-color-light);
+}
+
+.read-more {
+  font-size: 1rem;
+  color: var(--black-color);
+  font-weight: var(--font-regular);
+  text-decoration: underline;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.cta {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.cta-button {
+  background-color: green;
+  color: var(--white-color);
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: darkgreen;
+}
+
+@media screen and (max-width: 768px) {
+  .categories {
+    flex-direction: column;
+  }
+
+  .category {
+    flex: 1 1 100%;
+  }
+
+  .featured-item {
+    flex-direction: column;
+    gap: 1rem;
   }
 }
